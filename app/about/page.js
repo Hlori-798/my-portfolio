@@ -12,7 +12,7 @@ export default function About() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Who I Am</h2>
           <p className="text-gray-700 mb-4">
             I'm Hlori Ntshembho Manganyi, a Full Stack Developer passionate about 
-            building practical web applications,I build webapplications that solve real-world problems. 
+            building practical web applications,I build web applications that solve real-world problems. 
             I believe in creating software that makes people's lives easier.
           </p>
           <p className="text-gray-700">

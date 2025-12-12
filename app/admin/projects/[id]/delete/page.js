@@ -61,10 +61,6 @@ export default function DeleteProject() {
     <div className="min-h-screen bg-stone-50">
       <div className="max-w-2xl mx-auto px-4 py-16">
 
-        <Link href="/admin/projects" className="inline-flex items-center 
-          text-stone-600 hover:text-stone-900 mb-8 transition-colors">
-          Back to Projects</Link>
-
         <div className="bg-white border border-stone-200 rounded-xl p-8">
           <h1 className="text-3xl font-bold text-stone-900 mb-6">Delete Project</h1>
           <div className="mb-8 p-4 bg-red-50 border border-red-200 rounded-lg">

@@ -1,8 +1,8 @@
-import { supabase } from '@/lib/supabase'
-import Link from 'next/link'
+import { supabase } from "@/lib/supabase"
+import Link from "next/link"
 
 export default async function ProjectPage({ params }) {
-  const { id } = params
+  const { id } = await params
 
   // Fetches one project by id
   const { data: project } = await supabase
@@ -59,7 +59,7 @@ export default async function ProjectPage({ params }) {
           )}
 
           {/* links */}
-          {project.github || project.Live &&  (
+          {project.github || project.live &&  (
             <div className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-stone-200">
               {project.github && (
               <a href={project.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center 
@@ -69,7 +69,8 @@ export default async function ProjectPage({ params }) {
               )}
               {project.live && (
               <a href={project.live} target="_blank" rel="noopener noreferrer" className="inline-flex items-center 
-                justify-center px-6 py-3 border-2 border-stone-900 text-stone-900 rounded-lg hover:bg-stone-900 hover:text-white transition-colors">
+                justify-center px-6 py-3 border-2 border-stone-900 text-stone-900 rounded-lg hover:bg-stone-900 
+                hover:text-white transition-colors">
                 View Live Project
               </a>
               )}
